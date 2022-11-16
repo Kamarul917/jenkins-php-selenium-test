@@ -19,8 +19,8 @@ pipeline {
 						}
 					}
 					steps {
-						bat 'mvn -B -DskipTests clean package'
-						bat 'mvn test'
+						sh 'mvn -B -DskipTests clean package'
+						sh 'mvn test'
 					}
 					post {
 						always {
